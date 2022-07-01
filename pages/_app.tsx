@@ -7,10 +7,14 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Header from '../components/Header'
 import MainThemeProvider from '../components/base/theme/ThemeProvider'
+import Head from 'next/head'
 
 function MyApp ({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <meta name="theme-color" content="#19161A" />
+      </Head>
       <MainThemeProvider>
         <Header />
 
